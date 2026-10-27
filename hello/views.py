@@ -10,3 +10,6 @@ def azamat(request):
 
 def akmal(request):
     return HttpResponse('hello, akmal')
+
+def greet(request, name):
+    return HttpResponse(f'hello {name}')
