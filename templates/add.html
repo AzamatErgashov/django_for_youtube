@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block budy%}
+<h1>add tasks</h1>
+<form action="{% url 'tasks:add' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="task">
+    <input type="submit">
+</form>
+<a href="{% url 'tasks:index' %}">view</a>
+{% endblock %}
