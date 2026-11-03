@@ -4,5 +4,5 @@ from django.shortcuts import render
 task = ['read','sleep','coffee']
 def index(request):
     return render(request, "proectapp.html", {
-         "tasks": task
+         "task": task
     })

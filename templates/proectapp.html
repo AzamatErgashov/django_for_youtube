@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>vazifalar</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block budy %}
     <ul>
         {% for tasks in task %}
-            <li>
-                {{ tasks }}
-            </li>
+            <li>{{ tasks }}</li>
         {% endfor %}
     </ul>
-
-
-</body>
-</html>
+{% endblock %}
